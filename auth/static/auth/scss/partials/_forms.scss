@@ -4,34 +4,46 @@
 form {
   @include flex-center(column);
   width: 100%;
+  
   input {
     width: 100%;
     display: block;
-    margin: 10px 0;
-    border: 1px solid $white-color;
+    margin: 8px 0 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
     color: $white-color;
-    background-color: transparent;
-    border-radius: 10px;
-    padding: 0.7rem;
+    background-color: rgba(255, 255, 255, 0.03);
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    transition: all 0.2s ease;
 
     &:focus {
       outline: none;
-      border: 1px solid $secondary-color;
+      border-color: rgba($secondary-color, 0.5);
+      box-shadow: 0 0 0 2px rgba($secondary-color, 0.1);
     }
   }
 
   label {
     width: 100%;
+    color: $gray-color;
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.03em;
   }
 
   .errorlist {
-    background-color: #e94b3c;
-    border-radius: 10px;
-    padding: 1rem;
-    color: lighten(#e94b3c, 30%);
+    background-color: rgba(220, 53, 69, 0.1);
+    border: 1px solid rgba(220, 53, 69, 0.2);
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    margin: 0 0 16px;
+    color: #ff6b6b;
+    width: 100%;
 
     li {
-      margin-left: 15px;
+      list-style: none;
+      font-size: 0.85rem;
+      line-height: 1.5;
     }
   }
 }

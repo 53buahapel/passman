@@ -246,3 +246,5 @@ Thumbs.db
 
 db-info.txt
 media/
+
+.env

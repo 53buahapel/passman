@@ -1,24 +1,43 @@
 @use './variables' as *;
 @use './mixins' as *;
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $white-color;
 }
 
 .title-page {
   text-align: center;
-  font-size: 2.5em;
-  text-transform: uppercase;
-  letter-spacing: 0.3rem;
-  font-weight: 900;
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: $white-color;
 
   @include media-query(768px) {
-    font-size: 2em;
+    font-size: 1.6rem;
   }
+  
   @include media-query(576px) {
-    font-size: 1.7em;
+    font-size: 1.4rem;
   }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  font-weight: 500;
+}
+
+p {
+  margin-top: 0;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.2s ease;
 }
 
 .card {
@@ -26,19 +45,16 @@ body {
     .site {
       padding: 1rem;
       a {
-        font-size: 2em;
-        display: inline-block;
-        font-weight: 900;
+        font-size: 1.25rem;
+        font-weight: 500;
         color: $white-color;
-        text-decoration: none;
 
         @include media-query(376px) {
-          font-size: 1.7em;
+          font-size: 1.1rem;
         }
 
         &:hover {
           color: $secondary-color;
-          text-decoration: underline;
         }
       }
     }

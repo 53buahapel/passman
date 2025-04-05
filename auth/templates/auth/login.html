@@ -25,6 +25,10 @@
         <input type="hidden" name="next" value="/" />
         {% endif %}
         <button type="submit" class="btn btn-white btn-sm">Login</button>
+        
+        <div style="width: 100%; text-align: center; margin-top: 20px;">
+          <a href="{% url 'auth:register' %}" class="reglog">Don't have an account? Register</a>
+        </div>
       </form>
     </div>
   </div>
