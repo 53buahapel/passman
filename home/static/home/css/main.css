@@ -17,7 +17,7 @@
 
 body {
   height: 100vh;
-  background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);
+  background-image: linear-gradient(315deg, rgb(25, 30, 58) 0%, rgb(30, 71, 128) 74%);
   background-repeat: no-repeat;
   font-family: "Titillium Web", sans-serif;
   color: #101820;

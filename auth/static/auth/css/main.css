@@ -27,7 +27,7 @@ body {
   margin-top: 10px;
 }
 .reglog:hover {
-  color: #ffdd00;
+  color:rgb(30, 71, 128);
 }
 
 .text {
@@ -56,7 +56,7 @@ form input {
 }
 form input:focus {
   outline: none;
-  border: 1px solid #ffdd00;
+  border: 1px solid rgb(30, 71, 128);
 }
 form label {
   width: 100%;
@@ -92,12 +92,12 @@ form .errorlist li {
   width: 100%;
 }
 .auth .btn:hover {
-  background-color: #fbb034;
+  background-color:rgb(25, 30, 58);
   transform: none;
 }
 
 .left-content {
-  background-image: linear-gradient(to top left, #fbb034 0%, #ffdd00 74%);
+  background-image: linear-gradient(to top left, rgb(25, 30, 58) 0%, rgb(30, 71, 128) 74%);
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
@@ -116,7 +116,7 @@ form .errorlist li {
 .right-content {
   padding: 1.5rem;
   background-color: #101820;
-  color: #ffdd00;
+  color: rgb(30, 71, 128);
   display: flex;
   justify-content: center;
   align-items: center;

@@ -9,7 +9,7 @@
   cursor: pointer;
   background-color: #101820;
   border: none;
-  color: #ffdd00;
+  color: rgb(30, 71, 128);
   border-radius: 10px;
   font-size: medium;
   font-weight: bold;
@@ -19,7 +19,7 @@
   display: inline-block;
 }
 .btn-white {
-  background-color: #ffdd00;
+  background-color: rgb(30, 71, 128);
   color: #101820;
 }
 .btn-sm {
@@ -53,14 +53,14 @@ table td {
   padding: 0.77rem;
 }
 table thead th {
-  color: #ffdd00;
+  color: rgb(30, 71, 128);
 }
 table a.link {
   color: #f2f3f4;
   text-decoration: none;
 }
 table a.link:hover {
-  color: #ffdd00;
+  color: rgb(30, 71, 128);
   text-decoration: underline;
 }
 table tbody tr:nth-child(odd) {
@@ -76,7 +76,7 @@ table tbody tr:nth-child(odd) {
   padding: 5px;
   border-radius: 10px;
   background-color: #101820;
-  border: 1px solid #ffdd00;
+  border: 1px solid rgb(30, 71, 128);
   cursor: pointer;
 }
 @media screen and (max-width: 576px) {
@@ -87,7 +87,7 @@ table tbody tr:nth-child(odd) {
 .logout-btn a {
   display: grid;
   place-items: center;
-  color: #ffdd00;
+  color: rgb(30, 71, 128);
 }
 
 .pagination {
@@ -115,7 +115,7 @@ table tbody tr:nth-child(odd) {
   width: 40px;
 }
 .pagination .btn-num {
-  border: 1px solid #ffdd00;
+  border: 1px solid rgb(30, 71, 128);
   margin: 0 5px;
 }
 
