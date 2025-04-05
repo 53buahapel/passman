@@ -2,9 +2,7 @@
 
 ## Kenapa project ini dibuat?
 
-Project ini dibuat karena ingin menyelesaikan masalah saya pribadi, yaitu masalah dalam pengelelolaan password. Saya pribadi punya banyak sekali akun sosial media dan setiap akun itu punya password yang berbeda-beda, contohnya akun A punya password yang beda dengan akun B. Nah karena itu dibuatlah project ini, dimana tujuannya untuk menyimpan password password dari akun yang saya.
-
-Meskipun sebenarnya saya bisa menyimpan password password saya di aplikasi tertentu, tapi karena saya "suka ngetik", jadi saya buatlah project ini, sekalian bisa nambah pengetahuan saya. Dan fun fact nya ini project pertama saya menggunakan Django.
+Project ini dibuat karena ingin menyelesaikan masalah kebanyakan orang, yaitu masalah dalam pengelelolaan password. Kebanyakan orang punya banyak sekali akun sosial media dan setiap akun itu punya password yang berbeda-beda, contohnya akun A punya password yang beda dengan akun B. Nah karena itu dibuatlah project ini, dimana tujuannya untuk menyimpan password password dari akun sosial media kita, agar kita tidak perlu mengingatnya lagi. Kita hanya perlu mengingat satu password saja, yaitu password dari aplikasi ini.
 
 ## Cara Instalasi / Menjalankan Project Ini
 
@@ -14,13 +12,15 @@ Meskipun sebenarnya saya bisa menyimpan password password saya di aplikasi terte
 
    https://www.python.org/
 
+   atau bisa juga install dari microsoft store (windows) agar lebih mudah.
+
    kalau udah didownload dan diintall, bisa ketikkan command dibawah:
 
    `python --version`
 
    output (versi python):
 
-   `Python 3.9.4`
+   `Python 3.9.4` (versi bisa berbeda)
 
    kalau muncul versi pythonnya berarti berhasil diinstall.
 
@@ -30,17 +30,17 @@ Meskipun sebenarnya saya bisa menyimpan password password saya di aplikasi terte
 
    output (versi pip):
 
-   `pip 21.1.2`
+   `pip 21.1.2` (versi bisa berbeda)
 
 2. Clone atau download project ini
 
-   `git clone https://github.com/ardhptr21/password-manager.git`
+   `git clone https://github.com/53buahapel/passman.git`
 
 3. Buka terminal dan cd ke project yang udah didownload/clone
 
    `cd [path projectnya]`
 
-4. Buat virtual environment untuk package yang nanti dibutuhkan
+4. Buat virtual environment untuk package yang nanti dibutuhkan (opsional)
 
    `python -m venv [nama environment]`
 
@@ -50,7 +50,7 @@ Meskipun sebenarnya saya bisa menyimpan password password saya di aplikasi terte
 
    akan menghasilkan folder baru yang namanya sesuai dengan environment yang kita buat.
 
-5. Activate virtual environment nya
+5. Activate virtual environment nya (jika menggunakan virtual environment step 4)
 
    ### windows
 
@@ -76,7 +76,7 @@ Meskipun sebenarnya saya bisa menyimpan password password saya di aplikasi terte
 
    akan membuat file baru dengan nama `db.sqlite3`, yaitu file database sqlite3
 
-8. Create super user untuk login
+8. Create super user untuk login sebagai admin
 
    `python manage.py createsuperuser`
 
