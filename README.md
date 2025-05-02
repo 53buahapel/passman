@@ -4,7 +4,9 @@
 
 Project ini dibuat karena ingin menyelesaikan masalah kebanyakan orang, yaitu masalah dalam pengelelolaan password. Kebanyakan orang punya banyak sekali akun sosial media dan setiap akun itu punya password yang berbeda-beda, contohnya akun A punya password yang beda dengan akun B. Nah karena itu dibuatlah project ini, dimana tujuannya untuk menyimpan password password dari akun sosial media kita, agar kita tidak perlu mengingatnya lagi. Kita hanya perlu mengingat satu password saja, yaitu password dari aplikasi ini.
 
+
 ## Cara Instalasi / Menjalankan Project Ini
+
 
 1. Install python.
 
