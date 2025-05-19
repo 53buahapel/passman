@@ -78,7 +78,7 @@ Project ini dibuat karena ingin menyelesaikan masalah kebanyakan orang, yaitu ma
 
    akan membuat file baru dengan nama `db.sqlite3`, yaitu file database sqlite3
 
-8. Create super user untuk login sebagai admin
+8. Create super user untuk login sebagai admin (opsional)
 
    `python manage.py createsuperuser`
 
