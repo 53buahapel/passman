@@ -1,7 +1,7 @@
 {% extends 'management/base.html' %} {% load static %}
 
 <!-- PAGE TITLE -->
-{% block title %}{{ block.super }} | Create{% endblock title %}
+{% block title %}{{ block.super }} | Update{% endblock title %}
 
 <!-- MAIN CONTENT -->
 {% block content %}
@@ -28,7 +28,13 @@
         <small>Current: <a href="{{img_url}}" target="_blank">{{img_url}}</a></small>
       </div>
       <!-- RENDER FIELDS EXCLUDE TYPE FILE -->
-      {% for field in form %} {% if field.html_name != 'image_site' %}{{field}}{% endif %} {% endfor %}
+      {% for field in form %}
+        {% if field.html_name == 'password' %}
+          <input type="text" name="password" value="{{decrypted_password}}" />
+        {% elif field.html_name != 'image_site' %}
+          {{field}}
+        {% endif %}
+      {% endfor %}
       <button type="submit" class="btn btn-white btn-sm">Update</button>
     </form>
   </div>
