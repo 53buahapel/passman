@@ -44,14 +44,17 @@ class ManagementUpdateView(UpdateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context.update({'img_url': self.get_object().image_site.url})
+        # Decrypt the password for display in the form
+        account = self.get_object()
+        context.update({
+            'img_url': account.image_site.url,
+            'decrypted_password': account.decrypt_password()
+        })
         return context
     
     def form_valid(self, form):
-        # Check if password was changed
-        if self.get_object().password != form.cleaned_data['password']:
-            # Set flag to indicate password needs re-encryption
-            form.instance.password_changed = True
+        # Re-encrypt the password before saving
+        form.instance.password = form.instance.encrypt_password(form.cleaned_data['password'])
         return super().form_valid(form)
     
     def get_queryset(self):
